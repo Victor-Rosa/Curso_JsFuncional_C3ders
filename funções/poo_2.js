@@ -1,6 +1,4 @@
-
-
-  // Função Construtora 
+// Função Construtora 
 function Product(name, price, discount = 0.5){ 
     this.name = name;
     this.price = price;
@@ -58,3 +56,26 @@ console.log(product2.name)
 console.log(product2.price)
 
 console.log(product2.finalPrice())
+
+
+class Caixa  {
+
+  constructor(value, nome){
+    this.lado = value
+    this.name = nome
+  }
+   
+
+   calcularVolume(){
+    return `O volume total da caixa é: ${this.lado*this.lado*this.lado}`
+  } 
+
+}
+
+
+
+console.log("--------------------")
+const caixa1 = new Caixa(6, "livro")
+console.log(caixa1.lado)
+console.log(caixa1.name)
+console.log(caixa1.calcularVolume())
